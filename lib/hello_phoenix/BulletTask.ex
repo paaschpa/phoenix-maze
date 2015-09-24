@@ -1,41 +1,29 @@
 defmodule HelloPhoenix.BulletTask do
     use Database
 
-    @message_type_add_bullet "11"
-    @message_type_update_bullet "12"
-    @message_type_remove_bullet "13"
-    @message_type_kill_player "14"
-
-    def start_link(playerId, x, y, vX, vY) do 
-        Task.start(fn -> tick(playerId, x, y, vX, vY) end)
+    def start_link(bullet) do 
+        Task.start(fn -> tick(bullet) end)
     end
 
-    def tick(playerId, x, y, vX, vY) do 
-        bulletId = get_current_time <> playerId
-        HelloPhoenix.Endpoint.broadcast! "rawkets:game", @message_type_add_bullet, %{i: bulletId, x: x, y: y} #add bullet
-        :timer.sleep(30)
-        tick_update(bulletId, playerId, x + vX, y + vY, 1, vX, vY)
+    def tick(bullet) do
+        tick_update(bullet)
     end
 
-    def tick_update(bulletId, playerId, x, y, alive, vX, vY) do
-        if alive < 20 do
+    def tick_update(bullet) do
+         
+        if bullet.age < 20 do
             Amnesia.transaction do
-                selection = Player.where alive == true
-                if selection do
-                    alive_players = selection |> Amnesia.Selection.values
-                    if kill_player(alive_players, bulletId, playerId, x, y) == true do 
-                        #do nothing process can die
-                    else
-                        HelloPhoenix.Endpoint.broadcast! "rawkets:game", @message_type_update_bullet, %{i: bulletId, x: x, y: y} #update bullet
-                        :timer.sleep(30)
-                        tick_update(bulletId, playerId, x + vX, y + vY, alive + 1, vX, vY)
-                    end
-                end
+              bullet |> Bullet.write 
             end
- 
+            :timer.sleep(30)
+            updated_bullet = %{bullet | x: bullet.x + bullet.vX, y: bullet.y + bullet.vY, age: bullet.age + 1}
+            tick_update(updated_bullet)
         else
-            HelloPhoenix.Endpoint.broadcast! "rawkets:game", @message_type_remove_bullet, %{i: bulletId} #remove bullet
+            Amnesia.transaction do
+              bullet |> Bullet.delete 
+            end
         end
+
     end
 
     defp kill_player([], bulletId, playerId, x, y) do
@@ -46,6 +34,8 @@ defmodule HelloPhoenix.BulletTask do
         kill_radius = get_kill_radius(head, x, y)
     
         case {head.id == playerId, kill_radius < 10} do 
+            {true, _} ->
+              false
             {false, true} ->
                 updated_player = %{head | alive: false}
                 Amnesia.transaction do

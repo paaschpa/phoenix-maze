@@ -77,7 +77,8 @@ defmodule HelloPhoenix.RawketsChannel do
 
     #Create Bullet
     def handle_in(@message_type_add_bullet, %{"x" => x, "y" => y, "vX" => vX, "vY" => vY}, socket) do
-        HelloPhoenix.BulletTask.start_link(socket.id, x, y, vX, vY)
+        b = %Bullet{id: get_current_time <> socket.id, playerId: socket.id, x: x, y: y, vX: vX, vY: vY, age: 0, alive: true} 
+        HelloPhoenix.BulletTask.start_link(b)
         
         {:noreply, socket}
     end 
