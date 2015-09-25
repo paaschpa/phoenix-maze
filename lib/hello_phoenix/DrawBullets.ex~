@@ -6,6 +6,7 @@ defmodule HelloPhoenix.DrawBullets do
     Amnesia.transaction do 
         selection = Bullet.where id != nil
         if selection do
+            IO.puts("tick")
             all_bullets = selection |> Amnesia.Selection.values
             Enum.each(all_bullets, fn(b) -> draw(b) end)
         end

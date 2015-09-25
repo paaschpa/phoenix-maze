@@ -19,8 +19,10 @@ defmodule HelloPhoenix.BulletTask do
             updated_bullet = %{bullet | x: bullet.x + bullet.vX, y: bullet.y + bullet.vY, age: bullet.age + 1}
             tick_update(updated_bullet)
         else
+            HelloPhoenix.Endpoint.broadcast! "rawkets:game", "13", %{i: bullet.id} 
             Amnesia.transaction do
-              bullet |> Bullet.delete 
+              b = Bullet.read(bullet.id)
+              b |> Bullet.delete 
             end
         end
 

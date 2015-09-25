@@ -8,7 +8,7 @@ defmodule HelloPhoenix do
     import Supervisor.Spec, warn: false
 
     Amnesia.start #I feel I should stop this at some point or its going to bite me...
-    :timer.apply_interval(30, HelloPhoenix.DrawBullets, :tick, [])
+    :timer.apply_interval(150, HelloPhoenix.DrawBullets, :tick, [])
 
     children = [
       # Start the endpoint when the application starts
