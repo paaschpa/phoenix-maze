@@ -1,6 +1,8 @@
 defmodule HelloPhoenix.Endpoint do
   use Phoenix.Endpoint, otp_app: :hello_phoenix
 
+  plug Beaker.Integrations.Phoenix
+
   socket "/ws", HelloPhoenix.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.

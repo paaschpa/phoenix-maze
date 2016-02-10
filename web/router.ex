@@ -6,11 +6,14 @@ defmodule HelloPhoenix.Router do
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
+    #plug HelloPhoenix.PlugExometer
   end
 
   pipeline :api do
     plug :accepts, ["json"]
   end
+
+  forward "/beaker", Beaker.Web
 
   scope "/", HelloPhoenix do
     pipe_through :browser # Use the default browser stack
@@ -24,6 +27,7 @@ defmodule HelloPhoenix.Router do
     get "maze/mobile", MazeController, :mobile
     get "rawkets", RawketsController, :index
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", HelloPhoenix do

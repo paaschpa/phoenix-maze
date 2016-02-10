@@ -37,7 +37,10 @@ exports.config = {
   // Phoenix paths configuration
   paths: {
     // Which directories to watch
-    watched: ["web/static", "test/static"],
+    watched: [
+        "web/static", 
+        "test/static"
+    ],
 
     // Where to compile files to
     public: "priv/static"

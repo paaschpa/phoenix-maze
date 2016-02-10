@@ -1,0 +1,78 @@
+2015-11-07 00:59:17.210 [error] <0.295.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.300.0> exit with reason normal in context child_terminated
+2015-11-07 00:59:17.257 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 00:59:17.266 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 00:59:17.335 [info] <0.639.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 00:59:17.335 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 00:59:17.671 [warning] <0.601.0>@lager_console_backend:64 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2015-11-07 00:59:17.671 [error] <0.607.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2015-11-07 01:00:13.348 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:00:13.394 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:00:13.403 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:00:13.453 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:00:13.453 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:00:14.005 [warning] <0.6.0> lager_error_logger_h dropped 71 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:00:14.005 [info] <0.7.0> Application hello_phoenix started on node nonode@nohost
+2015-11-07 01:02:32.106 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:02:32.157 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:02:32.165 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:02:32.221 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:02:32.221 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:02:37.388 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:02:57.370 [error] <0.191.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.196.0> exit with reason normal in context child_terminated
+2015-11-07 01:02:57.425 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:02:57.432 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:02:57.476 [info] <0.263.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:02:57.477 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:02:58.042 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:02:58.043 [info] <0.7.0> Application hello_phoenix started on node nonode@nohost
+2015-11-07 01:03:58.129 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:03:58.178 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:03:58.186 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:03:58.233 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:03:58.233 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:04:02.564 [warning] <0.6.0> lager_error_logger_h dropped 67 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:07:09.117 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:07:09.160 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:07:09.168 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:07:09.211 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:07:09.211 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:07:16.362 [warning] <0.6.0> lager_error_logger_h dropped 71 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:10:46.251 [error] <0.289.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.294.0> exit with reason normal in context child_terminated
+2015-11-07 01:10:46.304 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:10:46.325 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:10:46.373 [info] <0.361.0>@exometer_report:do_start_reporters:632 Starting reporters with []
+2015-11-07 01:10:46.373 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:10:53.820 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:25:19.219 [error] <0.335.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.340.0> exit with reason normal in context child_terminated
+2015-11-07 01:25:19.271 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:25:19.281 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:25:19.368 [info] <0.407.0>@exometer_report:do_start_reporters:632 Starting reporters with [{reporters,[{exometer_report_tty,[]}]},{subscribers,[{exometer_report_tty,[my_webapp,webapp,resp_time],[min,max,mean,'95','90'],1000,true},{exometer_report_tty,[erlang,memory],[atom,binary,ets,processes,total],1000,true},{exometer_report_tty,[my_webapp,webapp,resp_count],one,1000,true},{exometer_report_tty,[erlang,statistics],run_queue,1000,true}]}]
+2015-11-07 01:25:19.368 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:25:19.373 [info] <0.412.0>@exometer_report_tty:exometer_init:57 exometer_report_tty([]): Starting
+2015-11-07 01:25:31.616 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:26:58.771 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:26:58.843 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:26:58.851 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:26:58.921 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with [{reporters,[{exometer_report_tty,[]}]},{subscribers,[{exometer_report_tty,[my_webapp,webapp,resp_time],[min,max,mean,'95','90'],1000,true},{exometer_report_tty,[erlang,memory],[atom,binary,ets,processes,total],1000,true},{exometer_report_tty,[my_webapp,webapp,resp_count],one,1000,true},{exometer_report_tty,[erlang,statistics],run_queue,1000,true}]}]
+2015-11-07 01:26:58.921 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:26:58.924 [info] <0.360.0>@exometer_report_tty:exometer_init:57 exometer_report_tty([]): Starting
+2015-11-07 01:27:09.132 [warning] <0.6.0> lager_error_logger_h dropped 21 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:27:09.133 [info] <0.7.0> Application fs started on node nonode@nohost
+2015-11-07 01:27:09.133 [info] <0.7.0> Application phoenix_live_reload started on node nonode@nohost
+2015-11-07 01:39:35.139 [error] <0.283.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.288.0> exit with reason normal in context child_terminated
+2015-11-07 01:39:35.183 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-11-07 01:39:35.190 [info] <0.7.0> Application setup started on node nonode@nohost
+2015-11-07 01:39:35.257 [info] <0.355.0>@exometer_report:do_start_reporters:632 Starting reporters with [{reporters,[{exometer_report_tty,[]}]},{subscribers,[{exometer_report_tty,[my_webapp,webapp,resp_time],[min,max,mean,'95','90'],1000,true},{exometer_report_tty,[erlang,memory],[atom,binary,ets,processes,total],1000,true},{exometer_report_tty,[my_webapp,webapp,resp_count],one,1000,true},{exometer_report_tty,[erlang,statistics],run_queue,1000,true}]}]
+2015-11-07 01:39:35.257 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2015-11-07 01:39:35.261 [info] <0.360.0>@exometer_report_tty:exometer_init:57 exometer_report_tty([]): Starting
+2015-11-07 01:39:44.904 [warning] <0.6.0> lager_error_logger_h dropped 72 messages in the last second that exceeded the limit of 50 messages/sec
+2015-11-07 01:39:44.904 [info] <0.7.0> Application fs started on node nonode@nohost
+2015-11-07 01:39:44.904 [info] <0.7.0> Application phoenix_live_reload started on node nonode@nohost
+2016-02-09 21:48:08.118 [error] <0.2557.0> Supervisor 'Elixir.Logger.Supervisor' had child undefined started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.2562.0> exit with reason normal in context child_terminated
+2016-02-09 21:48:08.290 [warning] <0.2612.0>@lager_console_backend:64 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2016-02-09 21:48:08.290 [error] <0.2617.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2016-02-09 21:48:08.509 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-02-09 21:48:08.540 [info] <0.7.0> Application setup started on node nonode@nohost
+2016-02-09 21:48:08.775 [info] <0.2643.0>@exometer_report:do_start_reporters:632 Starting reporters with [{reporters,[{exometer_report_tty,[]}]},{subscribers,[{exometer_report_tty,[my_webapp,webapp,resp_time],[min,max,mean,'95','90'],1000,true},{exometer_report_tty,[erlang,memory],[atom,binary,ets,processes,total],1000,true},{exometer_report_tty,[my_webapp,webapp,resp_count],one,1000,true},{exometer_report_tty,[erlang,statistics],run_queue,1000,true}]}]
+2016-02-09 21:48:08.775 [info] <0.7.0> Application exometer_core started on node nonode@nohost
+2016-02-09 21:48:08.790 [info] <0.2648.0>@exometer_report_tty:exometer_init:57 exometer_report_tty([]): Starting

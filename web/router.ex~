@@ -6,15 +6,13 @@ defmodule HelloPhoenix.Router do
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
+    #plug HelloPhoenix.PlugExometer
   end
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  socket "/ws", HelloPhoenix do
-    channel "maze:*", MazeChannel
-  end
 
   scope "/", HelloPhoenix do
     pipe_through :browser # Use the default browser stack
@@ -23,9 +21,12 @@ defmodule HelloPhoenix.Router do
     get "hello", HelloController, :index
     get "hello/:messenger", HelloController, :show
 
-    get "maze", MazeController, :index
+    get "maze", MazeController, :start
+    post "maze/game", MazeController, :game
+    get "maze/mobile", MazeController, :mobile
     get "rawkets", RawketsController, :index
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", HelloPhoenix do

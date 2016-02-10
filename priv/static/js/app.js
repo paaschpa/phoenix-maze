@@ -1335,8 +1335,7 @@ var _phoenix = require("phoenix");
 
 var App = {};
 
-exports["default"] = App;
-module.exports = exports["default"];
+exports.default = App;
 });
 
 ;

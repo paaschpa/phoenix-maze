@@ -65,7 +65,7 @@ defmodule HelloPhoenix.Web do
 
       # Alias the data repository and import query/model functions
       alias HelloPhoenix.Repo
-      import Ecto
+      import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
     end

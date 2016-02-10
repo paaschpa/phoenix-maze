@@ -6,7 +6,7 @@ defmodule HelloPhoenix do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
-
+    #:exometer.start()
     
     #UpdateBullets will call !broadcast to all clients...ah...yeah!?
     #HelloPhoenix.GameAgent.start_link()

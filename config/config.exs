@@ -23,3 +23,66 @@ config :logger, :console,
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+
+#exometer
+#app_name         = :my_webapp
+#polling_interval = 1_000
+#histogram_stats  = ~w(min max mean 95 90)a
+#memory_stats     = ~w(atom binary ets processes total)a
+#
+#config :exometer,
+#  predefined:
+#    [
+#      {
+#        ~w(erlang memory)a,
+#        {:function, :erlang, :memory, [], :proplist, memory_stats},
+#        []
+#      },
+#      {
+#        ~w(erlang statistics)a,
+#        {:function, :erlang, :statistics, [:'$dp'], :value, [:run_queue]},
+#        []
+#      },
+#      {
+#        [app_name, :webapp, :resp_time],
+#        :histogram,
+#        [truncate: false]
+#      },
+#      {
+#        [app_name, :webapp, :resp_count],
+#        :spiral,
+#        []
+#      },
+#    ],
+#
+#  reporters:
+#    [
+#      exometer_report_tty:
+#      [],
+#    ],
+#
+#  report: 
+#    [
+#      subscribers:
+#      [
+#        {
+#          :exometer_report_tty,
+#          [app_name, :webapp, :resp_time], histogram_stats, polling_interval, true
+#        },
+#        {
+#          :exometer_report_tty,
+#          [:erlang, :memory], memory_stats, polling_interval, true
+#        },
+#        {
+#          :exometer_report_tty,
+#          [app_name, :webapp, :resp_count], :one, polling_interval, true
+#        },
+#        {
+#          :exometer_report_tty,
+#          [:erlang, :statistics], :run_queue, polling_interval, true
+#        },
+#      ]
+#  ]
+
+
+

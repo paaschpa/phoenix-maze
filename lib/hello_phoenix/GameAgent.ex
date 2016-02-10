@@ -25,7 +25,7 @@ defmodule HelloPhoenix.GameAgent do
   end
 
   def get_player(playerId) do 
-    Agent.get(:rawkets, fn(s) -> HashDict.get(s.players, playerId) end)
+    Agent.get(:rawkets, fn(s) -> HashDict.get(s.players, playerId, %HelloPhoenix.Player{}) end)
   end
 
   def get_players() do 
